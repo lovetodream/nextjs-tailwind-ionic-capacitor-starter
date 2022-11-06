@@ -19,6 +19,7 @@
     "@ionic/react": "^6.2.9",
     "@ionic/react-router": "^6.2.9",
     "autoprefixer": "^10.2.6",
+    "capacitor-plugin-siri-shorts": "^2.2.2",
     "classnames": "^2.2.6",
     "next": "^12.2.0",
     "postcss": "^8.3.5",

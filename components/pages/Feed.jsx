@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Card from '../ui/Card';
+import { SiriShortcuts } from 'capacitor-plugin-siri-shorts';
 
 import {
   IonPage,
@@ -40,6 +41,8 @@ const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
 const Feed = () => {
   const homeItems = Store.useState(getHomeItems);
   const [showNotifications, setShowNotifications] = useState(false);
+
+  SiriShortcuts.donate({}).then(res => console.log(res));
 
   return (
     <IonPage>
